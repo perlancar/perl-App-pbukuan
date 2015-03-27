@@ -1,0 +1,24 @@
+#!perl
+
+# DATE
+# VERSION
+
+use 5.010;
+use strict;
+use warnings;
+
+use Perinci::CmdLine::Any;
+
+my $prefix = '/App/pbukuan/';
+Perinci::CmdLine::Any->new(
+    url => $prefix,
+    subcommands => {
+    },
+    log => 1,
+)->run;
+
+# ABSTRACT: pbukuan
+# PODNAME:
+
+=head1 SYNOPSIS
+
